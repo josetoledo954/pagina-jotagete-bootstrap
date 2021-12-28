@@ -184,14 +184,44 @@ main{
     width: 300px;
     background-color: rgba(250, 74, 74, 0.356);
     text-decoration: none;
-    
+
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
 }
+
+    @keyframes aparecer {
+        0% {
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
 
 .boton:hover{
     color: rgb(199, 194, 194);
     background-color: rgb(255, 0, 0);
+    animation: bounce 1s linear;
+    animation-iteration-count: infinite;
     
 }
+
+    @keyframes bounce {
+        20%,50%,80%,to{
+            transform: translateY(0);
+        }
+        40%{
+            transform: translateY(-30px);
+        }
+        70%{
+            transform: translateY(-15px);
+        }
+        90%{
+            transform: translateY(-4px);
+        }
+    }
 
 .tex{
     color: white;
@@ -216,7 +246,8 @@ main{
 }
 
 .fotosEquipos:hover{
-    border: solid 2px rgba(255, 0, 0, 0.24);
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 /* ----------------------------seccion 2---------------------------- */
@@ -368,6 +399,10 @@ footer li{
     
 }
 
+.textoEnlace:hover{
+    color: white;
+}
+
 .botonEnlaces{
     background-color: rgba(250, 74, 74, 0.356);
     text-align: center;
@@ -376,8 +411,26 @@ footer li{
 .botonEnlaces:hover{
     color: rgb(199, 194, 194);
     background-color: rgb(255, 0, 0);
+    animation: bouncex 1s linear;
+    animation-iteration-count: infinite;
     
 }
+
+    @keyframes bouncex {
+        20%,50%,80%,to{
+            transform: translateX(0);
+        }
+        40%{
+            transform: translateX(-30px);
+        }
+        70%{
+            transform: translateX(-15px);
+        }
+        90%{
+            transform: translateX(-4px);
+        }
+    }
+
 
 .fotoProducto{
     max-height: 500px;
