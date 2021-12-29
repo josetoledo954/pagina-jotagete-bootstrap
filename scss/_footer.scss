@@ -1,0 +1,37 @@
+/* -------------------footer---------------------------- */
+
+footer{
+    background-color: rgb(28, 30, 37);
+    height: 100px;
+    font-family: 'Shippori Antique', sans-serif;
+    display: flex;
+    align-items: center;
+    & .textoFooter{
+        height: 100px;
+        width: 20%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    & ul{
+        height: 100px;
+        width: 80%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        & li{
+            color: white;
+            list-style-type: none;
+            font-size: 12px;
+            
+        }
+    }
+    
+}
+
+
+/* -------------------footer---------------------------- */
